@@ -3,26 +3,26 @@ from linked_list import Mylist
 from linked_class import Queue
 
  
-def __init__(self,country,city,month):
- travell1 = travell()   
- country = "italy" 
- city = "rome"
- month = "june"
- travell1.change_inf(country, city, month)
+
+travell1 = travell()   
+country = "italy" 
+city = "rome"
+month = "june"
+travell1.change_inf(country, city, month)
  
  
-def __init__(self,country,city,month):
- travell2 = travell()
- country = "Kazakhstan" 
- city = "Taraz"
- month = "march"
- travell2.change_inf(country, city, month) 
-def __init__(self,country,city,month):
- travell3 = travell()
- country = "Japan" 
- city = "Tokyo"
- month = "august"
- travell3.change_inf(country, city, month) 
+
+travell2 = travell()
+country = "Kazakhstan" 
+city = "Taraz"
+month = "march"
+travell2.change_inf(country, city, month) 
+
+travell3 = travell()
+country = "Japan" 
+city = "Tokyo"
+month = "august"
+travell3.change_inf(country, city, month) 
 
 
 

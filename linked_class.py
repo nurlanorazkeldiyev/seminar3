@@ -1,22 +1,32 @@
 from linked_list import Mylist
 
 class Queue:
-    def __init__(self):
-        self.head = None
-        self.last = None
- 
-    def enqueue(self, data):
-        if self.last is None:
-            self.head = Node(data)
-            self.last = self.head
-        else:
-            self.last.next = Node(data)
-            self.last = self.last.next
- 
-    def dequeue(self):
-        if self.head is None:
-            return None
-        else:
-            to_return = self.head.data
-            self.head = self.head.next
-            return to_return
+	def __init__(self):
+		self.my_queue = Mylist()
+		
+	def length(self):
+		return self.my_queue.__len__()
+		
+	def isEmpty(self):
+		if self.length() == 0:
+			return True
+		return False
+		
+	def dequeue(self):
+		if not self.isEmpty():
+			count = 0
+			for elem in self.my_queue:
+				count += 1
+				if count == self.length():
+					data = elem
+					
+			self.my_queue.remove(data)	
+			return data
+				
+		print("The stack contains no items!")
+		return ""
+			
+		
+	def enqueue(self, item):
+		elem =  ListNode(item)
+		self.my_queue.add(elem)
